@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turismo Huasahuasi </title>
+    <link rel="icon" href="img/logo.png">
+    <link rel="stylesheet" href="Principal.css">
+
+</head>
+<body  onclick="PlayAudio()" >
+        <div class="contenedor">
+           <video autoplay muted loop id="video-fondo" >
+              <source  src="video/fondo.mp4" type="video/mp4">
+            </video>
+          <div class="oscurecer"></div>
+          <header>
+            <div class="content_titulo">
+             <center> <h1 > Turismo   a Huasahuasi </h1></center>
+             <center>  <h1>la capital <br> semillera de papas <br>del perÚ</h1></center>
+           <center><a class="boton " href="inicio.html">Explorar </a></center>
+          </div>
+          <audio id="audio_huasahuasi" loop >
+            <source  src="audio/audio1.mp3"
+            type="audio/mp3">
+            Tu navegador no soporta la etiqueta de audio.
+          </audio>
+              <script>
+                function PlayAudio (){
+                  document.getElementById("audio_huasahuasi").play();
+                  }
+                  window.onload= Function() ;{
+                    document.getElementById("audio_huasahuasi").play();
+                  }
+                  document.addEventListener('DOMContentLoaded', function() {
+                   var audio = document.getElementById("audio_huasahuasi");
+                    audio.volume = 0.1;});
+              </script>
+
+        </header>
+        <section>
+
+        </section>
+      
+                
+
+</body>
+<script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyBH0MzACTCLgtu_cBQMXvy-ueevvYRupcY",
+      authDomain: "huasahuasi-6206a.firebaseapp.com",
+      projectId: "huasahuasi-6206a",
+      storageBucket: "huasahuasi-6206a.appspot.com",
+      messagingSenderId: "1021741678060",
+      appId: "1:1021741678060:web:54f14e2bca44e8f8b054c9",
+      measurementId: "G-8G05M0SGZC"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script>
+</html>
